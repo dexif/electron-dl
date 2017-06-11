@@ -39,7 +39,7 @@ function registerListener(session, opts = {}, cb = () => {}) {
 			}
 
 			if (typeof opts.onProgress === 'function') {
-				opts.onProgress(ratio);
+				opts.onProgress(ratio, item);
 			}
 		});
 
